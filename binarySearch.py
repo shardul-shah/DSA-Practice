@@ -14,7 +14,7 @@ def binarySearch(inputArr, target):
 			return middle
 		elif inputArr[middle] < target:
 			left = middle + 1
-		else: # else inputArr[middle] > target:
+		else: # the same as `else inputArr[middle] > target:`. Note that we can also do if-return-if-else, since inputArr[middle] == target returns
 			right = middle - 1
 	return -1
 
