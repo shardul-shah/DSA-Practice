@@ -12,10 +12,9 @@ def binarySearch(inputArr, target):
 		middle = (left+right)//2
 		if inputArr[middle] == target:
 			return middle
-
-		if inputArr[middle] < target:
+		elif inputArr[middle] < target:
 			left = middle + 1
-		elif inputArr[middle] > target: # this can also be just an else, and the above if an elif, but since we are returning if inputArr[middle] == target, I prefer this for clarity
+		else: # else inputArr[middle] > target:
 			right = middle - 1
 	return -1
 
