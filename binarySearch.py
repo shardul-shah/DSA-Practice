@@ -1,5 +1,7 @@
 def binarySearch(inputArr, target):
 	# returns -1 if element not found, or index of target if found
+	# Time Complexity: O(log(N))
+	# Space Complexity: O(1)
 	if (len(inputArr) == 0):
 		return -1
 
